@@ -7,18 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Connector\**" />
+    <Compile Remove="Server_RestApi\**" />
+    <Compile Remove="User_WebSocet\**" />
+    <Content Remove="Connector\**" />
+    <Content Remove="Server_RestApi\**" />
+    <Content Remove="User_WebSocet\**" />
+    <EmbeddedResource Remove="Connector\**" />
+    <EmbeddedResource Remove="Server_RestApi\**" />
+    <EmbeddedResource Remove="User_WebSocet\**" />
+    <None Remove="Connector\**" />
+    <None Remove="Server_RestApi\**" />
+    <None Remove="User_WebSocet\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.3.0" />
     <PackageReference Include="RestSharp" Version="112.1.0" />
     <PackageReference Include="Serilog" Version="4.2.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Server_RestApi\Controller\" />
-    <Folder Include="Server_RestApi\Core\Новая папка\" />
-    <Folder Include="User_WebSocet\Controller\" />
-    <Folder Include="User_WebSocet\Core\Service\" />
   </ItemGroup>
 
 </Project>
