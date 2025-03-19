@@ -1,0 +1,32 @@
+# Игнорирование логов C#
+*.log
+*.log.*
+logs/
+*.trx  # Логи тестов MSTest
+
+# Игнорирование стандартных файлов C# и Visual Studio
+bin/
+obj/
+*.csproj.user
+*.suo
+*.user
+.vs/
+*.pdb
+*.cache
+
+# Игнорирование файлов Docker
+docker-compose*.yml.bak
+Dockerfile.bak
+*.dockerignore
+.docker/
+
+# Игнорирование логов nvim
+shada/
+*.shada
+
+# Общие временные файлы
+*.tmp
+*~
+
+# Игнорирование файла с api данными
+*.Apikey
